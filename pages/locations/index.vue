@@ -11,7 +11,7 @@
 					</v-card-media>
 					<v-card-text>{{item.body}}</v-card-text>
 					<v-card-actions>
-						<nuxt-link :to="'/blog/' + item.slug">
+						<nuxt-link :to="'/locations/' + item.slug">
 							<v-btn success>read more</v-btn>
 						</nuxt-link>
 					</v-card-actions>
@@ -25,7 +25,7 @@
 export default {
 	computed: {
 		blogPosts() {
-			return this.$store.state.blogPosts;
+			return this.$store.state.locations;
 		}
 	}
 };
