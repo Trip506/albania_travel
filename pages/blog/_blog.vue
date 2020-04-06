@@ -3,6 +3,7 @@
 		<article>
 			<h1>{{blogPost.title}}</h1>
 			<div>{{blogPost.body}}</div>
+			<img :src="blogPost.image" alt />
 		</article>
 	</div>
 </template>
